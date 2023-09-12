@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/bootstrap.js"></script>
+    <script src="validate.js"></script>
+    <style>
+ 
+    </style>
+</head>
+<body>
+
+    <h1>Registartion Form</h1>
+    <br>
+
+  
+ <form name="f1"  method="post" style="width:650px; height: fit-content; border: 5px solid black ; border-radius: 15px;margin: auto; padding: 20px;" >
+       <!--Textbox-->  
+        <label for="fname" class="form-label">First Name</label>
+        <br>
+        <input type="text" name="t1" id="fname" class="form-control" oninput=" return val()">
+        <div id="fe"></div>
+        <br>
+        <br>
+
+        <label for="lname" class="form-label">Last Name</label>
+        <br>
+        <input  type="text" name="lname" id="lname" class="form-control" oninput=" return val()">
+        <div id="ff"></div>
+        <br><br>
+        <label for="gender" class="form-label">Gender</label>
+        <br>
+         <!--Radiobutton-->   
+        <input type="radio"  name="r1" id="g1" class="form-check-input"><label for="male" class="form-label">Male</label>
+        <br>
+        <input type="radio" name="r1" id="g2" class="form-check-input"><label for="female" class="form-label">Female</label>
+        <br>
+        <br>
+
+         <!--Checkbox-->   
+        <label for="text" class="form-label">Hobbies :</label>
+        <br>
+        <input type="checkbox" name="a1" id="Gardening" class="form-check-input">
+        <label for="text" class="form-label">Gardening</label>
+       
+        <br>
+        <input type="checkbox" name="a2" id="Racing" class="form-check-input">
+        <label for ="text" class="form-label">Racing</label>
+        
+        <br>
+        <input type="checkbox" name="a2" id="Singing" class="form-check-input">
+        <label for="text" class="form-label">Singing</label>
+      
+        <br>
+        <input type="checkbox" name="a2" id="Playing" class="form-check-input">
+        <label for="text" class="form-label">Playing</label>
+       
+        <br>
+        <br>
+         <!--Dropdown-->   
+        <label for="add" class="form-label">Address :  </label> &nbsp;
+    <select name="add" class="form-control" >
+        <option value="op1" >Vasco</option>
+        <option value="op2">Sanguem</option>
+        <option value="op2">Curchorem</option>
+    </select>
+    <br>
+    <!--Password-->  
+       <!-- <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="Password" id="Password">
+        <br>
+        <br>
+        
+        <label for="password">Confirm Password</label>
+        <br>
+        <input type="password" name="Password" id="Password">
+        -->
+
+        <br>
+         <!--Password fieldset-->  
+        <fieldset>
+            <legend>Password  Details</legend>
+            <label for="pasword" class="form-label">Password :</label>
+            <br>
+            <input type="password" id="p2" name="pass1" class="form-control" ><br><br>
+            <label for="password" class="form-label">Confirm Password</label>
+            <br>
+            <input type="password" id="p3" name="pass2" class="form-control">
+
+        </fieldset>
+        <br>
+          <!--Email--> 
+        <label for="email" class="form-label">Email</label><br>
+        <input type="email" name="email" id="email" class="form-control">
+        <br><br>
+         <!--phoneno--> 
+         <label for="--phoneno--" class="form-label">Phone Number </label>
+         <br>
+         <input type="text" name="PhoneNumber" id="PhoneNumber" class="form-control">
+         <br><br>
+        <!--DOB-->  
+        <br><br>
+        <label for="dob" class="form-label">Date of Birth</label>
+        <input type="date" name="dob" id="birthdate" class="form-control">
+        <br><br>
+        <!--age--> 
+        <label for="age" class="form-label">Age</label>
+        <input type="number" name="age" id="age" class="form-control">
+        <br><br>
+        <!--File-->  
+        <label for="marksheet" class="form-label">Upload your Marksheet</label>
+        <input type="file" name="marksheet" id=" marksheet" class="form-control">
+        <br><br>
+        <!--Feedback--> 
+        <label for="feedback" class="form-label">Upload your Marksheet</label>
+       <textarea name="feedback" id="feedback" cols="30" rows="10" class="form-control"></textarea>
+        <br><br>
+
+      <br><br>
+         <!--submit/reset-->   
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input  type="submit" value="SUBMIT" class="btn btn-primary" >
+        <input  type="reset" value="Clear" class="btn btn-secondary">
+
+    </form>
+</body>
+</html>
